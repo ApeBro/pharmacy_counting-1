@@ -59,19 +59,19 @@ The results from each process pool worker is finally consolidated and merged.
 # Results
 
 The results accomplished using this multiprocessing approach was very satisfactory. A sample output is provided below. 
-    <br>[ 2018.07.16 13:22:37 ] Pharma counting begins.. </br>
-    <br>[ 2018.07.16 13:22:37 ] Initializing the setup for multiprocessing.. </br>
-    <br>[ 2018.07.16 13:22:37 ] Loading input file: ./input/itcont.txt </br>
-    <br>[ 2018.07.16 13:22:37 ] Successfully loaded input file: ./input/itcont.txt </br>
-    <br>[ 2018.07.16 13:22:37 ] Created the following part files : ['./input/itcont.txt_part_1', './input/itcont.txt_part_2'] </br>
-    <br>[ 2018.07.16 13:22:37 ] Processing part file : ./input/itcont.txt_part_1 </br>
-    <br>[ 2018.07.16 13:22:37 ] Processing part file : ./input/itcont.txt_part_2 </br>
-    <br>[ 2018.07.16 13:22:37 ] Generating Pharma report.. </br>
-    <br>[ 2018.07.16 13:22:37 ] Successfully saved the Pharma report: ./output/top_cost_drug.txt </br>
-    <br>[ 2018.07.16 13:22:37 ] Removing part file: ./input/itcont.txt_part_1 </br>
-    <br>[ 2018.07.16 13:22:37 ] Removing part file: ./input/itcont.txt_part_2 </br>
-    <br>[ 2018.07.16 13:22:37 ] Part files removed successfully.. </br>
-    <br>[ 2018.07.16 13:22:37 ] Pharma counting complete. </br>
+    <br>[ 2018.07.16 13:22:37 ] Pharma counting begins.. 
+    <br>[ 2018.07.16 13:22:37 ] Initializing the setup for multiprocessing.. 
+    <br>[ 2018.07.16 13:22:37 ] Loading input file: ./input/itcont.txt
+    <br>[ 2018.07.16 13:22:37 ] Successfully loaded input file: ./input/itcont.txt
+    <br>[ 2018.07.16 13:22:37 ] Created the following part files : ['./input/itcont.txt_part_1', './input/itcont.txt_part_2']
+    <br>[ 2018.07.16 13:22:37 ] Processing part file : ./input/itcont.txt_part_1 
+    <br>[ 2018.07.16 13:22:37 ] Processing part file : ./input/itcont.txt_part_2 
+    <br>[ 2018.07.16 13:22:37 ] Generating Pharma report.. 
+    <br>[ 2018.07.16 13:22:37 ] Successfully saved the Pharma report: ./output/top_cost_drug.txt 
+    <br>[ 2018.07.16 13:22:37 ] Removing part file: ./input/itcont.txt_part_1 
+    <br>[ 2018.07.16 13:22:37 ] Removing part file: ./input/itcont.txt_part_2 
+    <br>[ 2018.07.16 13:22:37 ] Part files removed successfully.. 
+    <br>[ 2018.07.16 13:22:37 ] Pharma counting complete. 
 
 
 # Assumptions and Dependencies
