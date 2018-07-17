@@ -44,16 +44,17 @@ The results from each process pool worker is finally consolidated and merged.
 # Design
 
  The following are the high level steps to accomplish the results: 
-    1. Load the input data file into memory.
-    2. Split dataset into parts and store them as part files in the input folder. Number of part files = number of cores in the system.
+ <br>   1. Load the input data file into memory.
+ <br>   2. Split dataset into parts and store them as part files in the input folder. Number of part files = number of cores in the system.
         Efficiently free up the original data loaded in memory as and when part files are created.
-    3. Create the worker pool, each process handles one part file.
-    4. Generators used to read the part file line by line for effective memory management.
-    5. Consolidate the result set returned by each of the process pool workers. While consolidating, the prescriber sets containing 
+ <br>   3. Create the worker pool, each process handles one part file.
+ <br>   4. Generators used to read the part file line by line for effective memory management.
+ <br>   5. Consolidate the result set returned by each of the process pool workers. While consolidating, the prescriber sets containing 
         unique prescribers are merged, and the drug costs are aggregated.
-    6. Sort the consolidated results by drug_cost (descending), and if in case of tie, by drug_name.
-    7. Write row by row into output file. To get a count of unique prescribers, get the size of the set. Set contains only unique elements.
-    8. Clean up by removing part files
+ <br>   6. Sort the consolidated results by drug_cost (descending), and if in case of tie, by drug_name.
+ <br>   7. Write row by row into output file. To get a count of unique prescribers, get the size of the set. Set contains only unique elements.
+ <br>   8. Clean up by removing part files
+</p>
 
 # Results
 
@@ -75,12 +76,12 @@ The results accomplished using this multiprocessing approach was very satisfacto
 
 # Assumptions and Dependencies
 1. The following packages of the Standard library have been used
-    multiprocessing as mp
-    datetime
-    sys
-    csv
-    datetime
-    os
+    <br>multiprocessing
+    <br>datetime
+    <br>sys
+    <br>csv
+    <br>datetime
+    <br>os
 
 2. Write and Delete permissions on input folder is required since the program creates part files. After writing the output, the program does a clean up by removing the part files. Part files are created in the same directory where the source file exists.  
 
